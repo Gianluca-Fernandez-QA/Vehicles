@@ -9,6 +9,8 @@ public Bus(int wheelsNo, String coatColour, int passengersCap, int maxSpeed, boo
 	this.setVehicle_Type("Bus");
 }
 	public Bus() {
+		this.hasChildren = true;
+		this.setVehicle_Type("Bus");
 		
 	}
 	public boolean isHasChildren() {

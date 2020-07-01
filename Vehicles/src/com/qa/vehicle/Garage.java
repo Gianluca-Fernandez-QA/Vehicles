@@ -2,6 +2,7 @@ package com.qa.vehicle;
 
 import java.util.ArrayList;
 
+
 public class Garage {
 	private static ArrayList<Vehicle> Garage = new ArrayList<Vehicle>();
 	
@@ -9,7 +10,7 @@ public class Garage {
 	     Garage.remove(remov);		
 		}
 	
-	public void dArrayItem(Vehicle test) {
+	public static void dArrayItem(Vehicle test) {
 		Garage.add(test);
 	}
 	
@@ -30,6 +31,29 @@ public class Garage {
 			System.out.println("You owe £12.00");
 		break;
 		}
+	  
 	}
+	
 		}
+		public static void removById(int id) {
+			Garage.remove(id);
+		}
+		public static void removByType(String Test) {
+		for (int i = 0; i < Garage.size(); i++) {	
+			
+			String pencil = Garage.get(i).getVehicle_Type();
+			if (Test == pencil){
+			 Garage.remove(i);
+			}
+		}
+		}
+		public static void emptyArray() {
+			for (int i = 0; i < Garage.size(); i++) {	
+				
+				String pencil = Garage.get(i).getVehicle_Type();
+				if (Garage.isEmpty() == false){
+				 Garage.remove(i);
+				}
+		}
+		
 }

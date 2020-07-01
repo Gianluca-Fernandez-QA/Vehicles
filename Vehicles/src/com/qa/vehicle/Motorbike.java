@@ -6,10 +6,12 @@ private boolean spoiler;
 
 public Motorbike(int wheelsNo, String coatColour, int passengersCap, int maxSpeed, boolean hasChildren) {
 	this.setVehicle_Type("Motorbike");
-	wheelsNo = 2;
+	this.setWheelsNo(0);
 	passengersCap = 2;
 }
 	 public Motorbike() {
+		 this.setVehicle_Type("Motorbike");
+		this.setWheelsNo(0);
 		// TODO Auto-generated constructor stub
 	} 
 		

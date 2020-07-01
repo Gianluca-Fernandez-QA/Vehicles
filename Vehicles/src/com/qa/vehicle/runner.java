@@ -7,13 +7,18 @@ public class runner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bus bus = new Bus(6, "Red", 16, 80, true, "Bus");
+		Bus bus = new Bus();
+		bus.setWheelsNo(2);
+		
+		
 		Motorbike Bikey = new Motorbike();
 		Bikey.setCoatColour("Black");
 		Car Sally = new Car();
-		
+		Garage.dArrayItem(Bikey);		
+		Garage.dArrayItem(Sally);
+		Garage.dArrayItem(bus);
 		Garage.CalculateBill();
-		
+
 		
 		
 		}
