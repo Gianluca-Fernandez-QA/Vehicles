@@ -4,7 +4,8 @@ public class Car extends Vehicle {
 private boolean spoiler;
 
 public Car(int wheelsNo, String coatColour, int passengersCap, int maxSpeed, boolean hasChildren) {
-	super(wheelsNo, coatColour, passengersCap, maxSpeed);
+	
+	this.setVehicle_Type("Car");
 	this.spoiler = true;
 }
 	public Car() {

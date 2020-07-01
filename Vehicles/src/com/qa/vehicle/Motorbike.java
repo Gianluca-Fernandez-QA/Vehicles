@@ -3,8 +3,9 @@ package com.qa.vehicle;
 public class Motorbike extends Vehicle {
 private boolean spoiler;
 
+
 public Motorbike(int wheelsNo, String coatColour, int passengersCap, int maxSpeed, boolean hasChildren) {
-	super(wheelsNo, coatColour, passengersCap, maxSpeed);
+	this.setVehicle_Type("Motorbike");
 	wheelsNo = 2;
 	passengersCap = 2;
 }

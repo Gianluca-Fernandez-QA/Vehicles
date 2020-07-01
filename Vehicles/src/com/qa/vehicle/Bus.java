@@ -4,8 +4,9 @@ public class Bus extends Vehicle {
 private boolean hasChildren;
 
 public Bus(int wheelsNo, String coatColour, int passengersCap, int maxSpeed, boolean hasChildren) {
-	super(wheelsNo, coatColour, passengersCap, maxSpeed);
-	this.hasChildren = hasChildren;
+	
+	this.hasChildren = true;
+	this.setVehicle_Type("Bus");
 }
 	public Bus() {
 		
