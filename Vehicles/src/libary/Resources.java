@@ -1,7 +1,8 @@
 package libary;
 
 abstract class Resources {
-private String Title;
-private String Author;
-int numOfPages;
+public abstract String Title();
+public abstract String Author();
+public abstract int numOfPages();
+
 }
