@@ -3,7 +3,7 @@ package libary;
 abstract class Resources {
 private String author;
  public Resources(String author) {
-	// TODO Auto-generated constructor stub
+	this.author = author;
 }
 public String getAuthor() {
 	return author;
