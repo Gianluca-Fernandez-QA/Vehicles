@@ -48,13 +48,10 @@ public class Garage {
 		}
 		}
 		public static void emptyArray() {
-			for (int i = 0; i < Garage.size(); i++) {	
+			
+				Garage.clear();
 				
-				String pencil = Garage.get(i).getVehicle_Type();
-				if (Garage.isEmpty() == false){
-				 Garage.remove(i);
-				}
 		}
 		
 		}
-}
+
