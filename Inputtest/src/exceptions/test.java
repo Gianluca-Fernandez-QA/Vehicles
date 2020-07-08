@@ -6,7 +6,7 @@ public class test {
 		try {
 
 			a = a / b;
-			throw new customError();
+			throw new customError("Testing");
 		} catch (customError e) {
 			e.printStackTrace();
 		} finally {
